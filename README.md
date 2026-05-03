@@ -87,6 +87,7 @@ pip install -r requirements.txt
 ```bash
 python src/generate_synthetic_video.py --output-dir data/input --frames 720 --width 256 --height 256 --seed 22098
 python src/run_motion_analytics.py --input-dir data/input --output-dir data/output --artifacts-dir artifacts --presentation-dir presentation --batch-size 64 --cpu-subset 180
+python src/create_demo_video.py --project-root . --output presentation/gpu_motion_analytics_demo.mp4
 ```
 
 ## Command line arguments
@@ -115,6 +116,23 @@ After a successful run, the project generates:
 - `artifacts/benchmark_summary.json`
 - `artifacts/sample_motion_results.png`
 - `presentation/DEMO_OUTLINE.md`
+- `presentation/gpu_motion_analytics_demo.mp4`
+
+## Demo video
+
+The repository includes a small script that builds a silent walkthrough video from the generated outputs:
+
+```bash
+python src/create_demo_video.py --project-root . --output presentation/gpu_motion_analytics_demo.mp4
+```
+
+This produces a short MP4 that shows:
+
+- the project title and measured GPU runtime
+- the execution commands and log summary
+- sample input and output visuals
+- the motion score chart with detected events
+- a short clip from the annotated output video
 
 ## Submission tips
 

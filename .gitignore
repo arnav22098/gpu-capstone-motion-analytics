@@ -3,5 +3,4 @@ __pycache__/
 artifacts/
 data/input/
 data/output/
-presentation/DEMO_OUTLINE.md
 *.zip

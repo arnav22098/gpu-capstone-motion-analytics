@@ -1,0 +1,17 @@
+{
+  "video_path": "gpu_motion_analytics_demo.mp4",
+  "duration_seconds": 26.0,
+  "fps": 24,
+  "resolution": [
+    1280,
+    720
+  ],
+  "sections": [
+    "title",
+    "execution_flow",
+    "input_output_collage",
+    "motion_score_chart",
+    "annotated_video_clip",
+    "closing_summary"
+  ]
+}
